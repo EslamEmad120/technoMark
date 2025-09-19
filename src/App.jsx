@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Home';
-import Navbar from '../src/Navbar';
+import Navbar from './Navbar';
 import Contact from './Contact';
 import About from './About';
 import Footer from './Footer';
