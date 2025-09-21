@@ -25,7 +25,7 @@ function About() {
       >
         <div className="container">
           <motion.h1
-            style={{ fontSize: "55px", fontWeight: "bold" }}
+            style={{ fontSize: "clamp(28px, 6vw, 55px)", fontWeight: "bold" }}
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
@@ -33,7 +33,7 @@ function About() {
             About Us
           </motion.h1>
           <motion.p
-            className="lead mt-3"
+            className="lead mt-3 fs-6 fs-md-5"
             style={{ maxWidth: "800px", margin: "auto", color: "#FFFFFF" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -46,11 +46,11 @@ function About() {
       </motion.div>
 
       {/* Company Intro */}
-      <section className="py-5" style={{ backgroundColor: "#FFFFFF" }}>
+      <section className="py-5 bg-white">
         <div className="container">
           <div className="row d-flex align-items-center">
             <motion.div
-              className="col-md-6 mb-4 mb-md-0"
+              className="col-12 col-md-6 mb-4 mb-md-0 text-center"
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
@@ -58,13 +58,13 @@ function About() {
             >
               <img
                 src={img1}
-                className="w-75 rounded shadow"
+                className="img-fluid w-100 w-md-75 rounded shadow"
                 alt="About TechnoMark"
               />
             </motion.div>
             <motion.div
-              className="col-md-6"
-              style={{ fontSize: "18px", color: "#000" }}
+              className="col-12 col-md-6 fs-6 fs-md-5"
+              style={{ color: "#000" }}
               initial={{ x: 100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
@@ -88,14 +88,19 @@ function About() {
         </div>
       </section>
 
-      {/* Brand Building / Product Dev / Growth Marketing */}
+      {/* What we Do */}
       <section className="py-5" style={{ backgroundColor: "#F9F9FF" }}>
         <div className="container">
+          <h2
+            style={{ color: "#7154CB", fontWeight: "bold" }}
+            className="text-center mb-4"
+          >
+            What we Do?
+          </h2>
           <div className="row align-items-center">
             {/* Text */}
-            <h2 style={{ color: "#7154CB", fontWeight: "bold" }} className="text-center mb-4">What we Do?</h2>
             <motion.div
-              className="col-md-6"
+              className="col-12 col-md-6 fs-6 fs-md-5"
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
@@ -105,9 +110,7 @@ function About() {
               <h3 style={{ color: "#7154CB", fontWeight: "600" }}>
                 Brand Building
               </h3>
-              <p className="mb-4">
-                Visual Identity — Video — Content Strategy
-              </p>
+              <p className="mb-4">Visual Identity — Video — Content Strategy</p>
 
               <h3 style={{ color: "#7154CB", fontWeight: "600" }}>
                 Product Development
@@ -117,14 +120,12 @@ function About() {
               <h3 style={{ color: "#7154CB", fontWeight: "600" }}>
                 Growth Marketing
               </h3>
-              <p className="mb-0">
-                Paid Media — CRO — Analytics — SEM Strategy
-              </p>
+              <p className="mb-0">Paid Media — CRO — Analytics — SEM Strategy</p>
             </motion.div>
 
             {/* Image */}
             <motion.div
-              className="col-md-6 d-flex justify-content-center mt-4 mt-md-0"
+              className="col-12 col-md-6 d-flex justify-content-center mt-4 mt-md-0"
               initial={{ x: 100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
@@ -132,7 +133,7 @@ function About() {
             >
               <img
                 src={brand}
-                className="w-75 rounded shadow-lg"
+                className="img-fluid w-100 w-md-75 rounded shadow-lg"
                 alt="Brand strategy visual"
               />
             </motion.div>
@@ -170,7 +171,7 @@ function About() {
             ].map((item, i) => (
               <motion.div
                 key={i}
-                className="col-md-4 mb-4"
+                className="col-12 col-md-4 mb-4"
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: i * 0.3, duration: 0.6 }}
@@ -185,7 +186,7 @@ function About() {
       </motion.section>
 
       {/* Services */}
-      <section className="py-5" style={{ backgroundColor: "#FFFFFF" }}>
+      <section className="py-5 bg-white">
         <div className="container">
           <h2
             className="text-center mb-5"
@@ -228,7 +229,7 @@ function About() {
             ].map((service, i) => (
               <motion.div
                 key={i}
-                className="col-md-4 mb-4"
+                className="col-12 col-sm-6 col-md-4 mb-4"
                 initial={{ scale: 0.8, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ delay: i * 0.2, duration: 0.6 }}

@@ -24,8 +24,8 @@ function Services() {
         </h1>
         <h3 className="text-center">All the services you need in one place.</h3>
 
-        <div className="row d-flex align-items-center my-3">
-          <div className="col-md-4">
+        <div className="row d-flex align-items-stretch my-3">
+          <div className="col-6 col-md-4 mb-4">
             <Link
               to="/service/graphic-design"
               className="text-decoration-none text-dark"
@@ -44,7 +44,7 @@ function Services() {
             </Link>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-6 col-md-4 mb-4">
             <Link
               to="/service/motion-graphic"
               className="text-decoration-none text-dark"
@@ -62,7 +62,7 @@ function Services() {
             </Link>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-6 col-md-4 mb-4">
             <Link
               to="/service/content-creator"
               className="text-decoration-none text-dark"
@@ -79,10 +79,8 @@ function Services() {
               </div>
             </Link>
           </div>
-        </div>
 
-        <div className="row d-flex align-items-center my-3">
-          <div className="col-md-4">
+          <div className="col-6 col-md-4 mb-4">
             <Link
               to="/service/media-buyer"
               className="text-decoration-none text-dark"
@@ -100,7 +98,7 @@ function Services() {
             </Link>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-6 col-md-4 mb-4">
             <Link
               to="/service/web-dev"
               className="text-decoration-none text-dark"
@@ -118,7 +116,7 @@ function Services() {
             </Link>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-6 col-md-4 mb-4">
             <Link
               to="/service/mobile-apps"
               className="text-decoration-none text-dark"
